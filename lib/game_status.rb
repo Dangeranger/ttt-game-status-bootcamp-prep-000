@@ -21,9 +21,11 @@ def won?(board)
   WIN_COMBINATIONS.each do |comb|
     mark = board[comb[0]]
     if mark == 'X' || mark == 'O'
-      check_for_win
+      check_for_win(board)
     else
       false
     end
   end
 end
+
+def check_for_win(board)

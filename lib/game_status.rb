@@ -25,3 +25,7 @@ def won?(board)
     return comb if result == 'XXX' || result == 'OOO'
   end
 end
+
+def full?(board)
+  board.any? { |move| board[move] == ' '}
+end

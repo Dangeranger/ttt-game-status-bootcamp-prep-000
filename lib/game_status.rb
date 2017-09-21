@@ -27,7 +27,7 @@ def won?(board)
       res
     end
     puts "RESULT is #{result}"
-    winner = comb if result == 'XXX' || result == 'OOO'
+    return comb if result == 'XXX' || result == 'OOO'
   end
   winner
 end

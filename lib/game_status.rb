@@ -44,5 +44,6 @@ end
 
 def winner(board)
   winning_move = won?(board)
+  puts "Winning move: #{winning_move}"
   winning_move.first if winning_move
 end

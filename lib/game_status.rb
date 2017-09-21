@@ -29,4 +29,5 @@ def won?(board)
     puts "RESULT is #{result}"
     winner = comb if result == 'XXX' || result == 'OOO'
   end
+  winner
 end

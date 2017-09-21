@@ -21,6 +21,7 @@ def won?(board)
   winner = nil
   WIN_COMBINATIONS.any? do |comb|
     result = comb.reduce('') { |res, mark| res << mark }
+    result == 'XXX' || result == 'OOO'
   end
 end
 #

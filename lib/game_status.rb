@@ -19,8 +19,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.any? do |comb|
-    result = comb.reduce('') do |res, mark|
-      res << board[mark]
+    result = comb.reduce('') do |string, mark|
+      string << board[mark]
     end
     return comb if result == 'XXX' || result == 'OOO'
   end

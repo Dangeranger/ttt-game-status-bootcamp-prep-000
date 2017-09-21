@@ -28,4 +28,5 @@ end
 
 def full?(board)
   return true if board.any? { |move| move == ' '}
+  return true if board.all?()
 end

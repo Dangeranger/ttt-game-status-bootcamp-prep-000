@@ -20,7 +20,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   winner = nil
   WIN_COMBINATIONS.any? do |comb|
-    next if comb.any? do |move| 
+    comb.each_cons(2) do |pair|
+      
       move == '' || e == ''
     end
   end

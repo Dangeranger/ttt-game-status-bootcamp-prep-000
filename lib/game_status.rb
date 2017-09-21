@@ -35,5 +35,5 @@ def full?(board)
 end
 
 def draw?(board)
-  board.all? { |m| m == 'X' || m == 'O'}
+  board.all? { |m| m == 'X' || m == 'O'} && !won?(board)
 end

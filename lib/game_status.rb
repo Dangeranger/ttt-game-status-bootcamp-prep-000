@@ -20,12 +20,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.any? do |comb|
     result = comb.reduce('') do |res, mark|
-      puts "Mark is: #{board[mark]}"
       res << board[mark]
-      puts "Res is: #{res}"
       res
     end
-    puts "RESULT is #{result}"
     return comb if result == 'XXX' || result == 'OOO'
   end
 end

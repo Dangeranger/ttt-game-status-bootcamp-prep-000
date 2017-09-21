@@ -19,17 +19,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |comb|
-    comb.all?
-    mark = board[comb[0]]
-    if mark == 'X' || mark == 'O'
-      check_for_win(board)
-    else
-      false
-    end
+    start = comb.first
+    comb.all? { |move| board[move] == 'X' || board[move] == 'O' }
   end
 end
-
-def check_for_win(board)
-  winner =
-  WIN_COMBINATIONS.each
-end
+# 
+# def check_for_win(board)
+#   winner =
+#   WIN_COMBINATIONS.each
+# end

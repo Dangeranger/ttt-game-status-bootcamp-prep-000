@@ -37,3 +37,7 @@ end
 def draw?(board)
   board.all? { |m| m == 'X' || m == 'O'} && !won?(board)
 end
+
+def over?(board)
+  false unless won?(board) || draw?(board)
+end

@@ -27,6 +27,9 @@ def won?(board)
 end
 
 def full?(board)
-  return true if board.any? { |move| move == ' '}
-  return true if board.all?()
+  if board.any? { |m| m == ' '}
+    false
+  else
+    board.all? { |m| m == 'X' || m == 'O'} && !won?(board)
+  end
 end

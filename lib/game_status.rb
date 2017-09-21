@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   winner = nil
   WIN_COMBINATIONS.any? do |comb|
-    comb.each_
+    comb.reduce('') { }
   end
 end
 #

@@ -30,7 +30,7 @@ def full?(board)
   if board.any? { |m| m == ' '}
     false
   else
-    board.all? { |m| m == 'X' || m == 'O'} && !won?(board)
+    draw?(board)
   end
 end
 

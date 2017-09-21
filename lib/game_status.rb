@@ -44,5 +44,5 @@ end
 
 def winner(board)
   winning_move = won?(board)
-  winning_move[0] if winning_move
+  winning_move.first if winning_move
 end

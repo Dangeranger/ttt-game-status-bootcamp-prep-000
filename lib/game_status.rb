@@ -18,7 +18,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  # winner = nil
   WIN_COMBINATIONS.any? do |comb|
     result = comb.reduce('') do |res, mark|
       puts "Mark is: #{board[mark]}"

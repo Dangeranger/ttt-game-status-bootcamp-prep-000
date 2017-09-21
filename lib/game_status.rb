@@ -27,5 +27,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? { |move| board[move] == ' '}
+  board.any? { |move| move == ' '}
 end

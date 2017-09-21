@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  winner = nil
+  # winner = nil
   WIN_COMBINATIONS.any? do |comb|
     result = comb.reduce('') do |res, mark|
       puts "Mark is: #{board[mark]}"
@@ -29,5 +29,4 @@ def won?(board)
     puts "RESULT is #{result}"
     return comb if result == 'XXX' || result == 'OOO'
   end
-  winner
 end

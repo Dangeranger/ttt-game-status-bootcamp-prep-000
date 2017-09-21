@@ -43,5 +43,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(boar)
+  winning_move = won?(board)
+  winning_move[0] if winning_move
 end
